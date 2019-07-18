@@ -1,0 +1,10 @@
+ public function saveCustomerInfo(Request $request){
+        $this->validate($request, [
+            'first_name'=>'required|regex:/^[\pL\s\-]+$/u',
+            'last_name'=>'required|regex:/^[\pL\s\-]+$/u',
+            'email'=>'required|email|unique:customers,email',
+            'password'=>'required|max:10|min:6',
+            'phone_number'=>'required|size:11|regex:/(01)[0-9]{9}/',
+            'address'=>'required',
+        ]);
+    }
