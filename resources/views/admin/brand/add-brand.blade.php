@@ -33,7 +33,7 @@
                             <form role="form" action="{{url('/new-brand')}}" method="POST" class="form-horizontal">
                                 {{csrf_field()}}
                                 <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-3 control-label">Brand Name</label>
+                                    <label for="inputEmail3" class="col-sm-3 control-label">Brand NAme</label>
                                     <div class="col-sm-9">
                                         <input type="text" name="brand_name" class="form-control" id="inputEmail3" placeholder="Brand Name">
                                          <span style="color: red">{{ $errors->has('brand_name') ?  $errors->first('brand_name') : ' '}}</span>

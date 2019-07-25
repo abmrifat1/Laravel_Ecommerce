@@ -33,7 +33,7 @@ class CategoryController extends Controller
         $categoryById= Category::find($id);
         $categoryById->publication_status=0;
         $categoryById->save();
-        return redirect('/manage-category')->with('message','Category Info update Successfully');
+        return redirect('/manage-category')->with('message','Category Information update Successfully');
 
     }
 

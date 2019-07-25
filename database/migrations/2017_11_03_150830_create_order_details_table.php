@@ -23,6 +23,7 @@ class CreateOrderDetailsTable extends Migration
             $table->timestamps();
         });
     }
+    //////kk
 
     /**
      * Reverse the migrations.
